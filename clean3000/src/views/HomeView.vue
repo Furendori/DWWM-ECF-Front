@@ -43,8 +43,8 @@ defineEmits(['update:selectedClient', 'update:intervDate', 'update:clientRemarks
       <h3>Observations</h3>
 
       <label for="remarks"
-        >Avez-vous des remarques à faire concernant la qualité de l'intervention
-        ?</label
+        >Avez-vous des remarques à faire concernant l'intervention ?
+      </label
       ><br />
       <textarea name="remarks" id="remarks" cols="30" rows="7"></textarea>
 
@@ -82,7 +82,7 @@ defineEmits(['update:selectedClient', 'update:intervDate', 'update:clientRemarks
 form {
   background-color: rgb(61, 61, 52);
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   width: 50%;
@@ -107,7 +107,7 @@ h2 {
 
 h3 {
   text-decoration: underline;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .signatures {
@@ -130,7 +130,7 @@ select {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 .firstSignature {
@@ -142,5 +142,15 @@ select {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgb(49, 49, 44);
+  color: white;
+
 }
+
+.signatures {
+  display: flex;
+  justify-content: center;
+}
+
 </style>
