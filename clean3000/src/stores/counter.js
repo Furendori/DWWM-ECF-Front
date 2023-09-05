@@ -1,12 +1,11 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
+import HomeView from '../views/HomeView.vue'
 
-export const useCounterStore = defineStore('counter', () => {
-  const count = ref(0)
-  const doubleCount = computed(() => count.value * 2)
-  function increment() {
-    count.value++
-  }
+export const intervInfos = defineStore('infos', () => {
+  <HomeView 
+    v-model:selected-client
+  />
 
   return { count, doubleCount, increment }
 })
